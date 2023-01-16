@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:var(--background);
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dimensonname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(119, 129, 121);
+    padding: 30px;
+}
+.datadimension{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: azure;
+  padding: 20px;
+  list-style: none;
+}
+.searchinput{
+   background-color: rgb(16, 22, 19);
+   padding: 2px;
+   width: 85%;
+   border-radius: 20px;
+   text-indent:10px;
+   color: rgb(199, 214, 202);
+}
+button{
+  border-radius:20px;
+  width: 100px;
+  height: 30px;
+}
+button :hover{
+  cursor: pointer;
+  background-color: rgb(2, 39, 10);
+
+}
+.searchdiv{
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+}
+.listresidents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: rgb(184, 189, 177);
+  padding: 20px;
+  gap: 30px;
+}
+.listresidents2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: rgb(13, 19, 5);
+  padding: 10px;
+  color: rgb(228, 233, 220);
+  gap: 3px;
+  border-style: solid;
+  border-color: rgb(133, 119, 119);
+  width: 400px;
+  height: auto;
+}
+.imgcoctel{
+   width: 200px;
+   height: 200px;
+}
+
+.contenedorerror{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.boxerror{
+  width: 300px;
+  height: 200px;
+}
+.logoerror{
+  width: 100px;
+  height: 100px;
+}
+ 
+@media screen and (min-width:600px) {
+  .listresidents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    list-style: none;
+    background-color: rgb(143, 146, 139);
+    padding: 20px;
+    gap: 30px;
+  }
+  .datadimension{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .boxerror{
+    width: 500px;
+    height: 300px;
+  }
+  .logoerror{
+    width: 200px;
+    height: 200px;
+  }
+}
